@@ -178,3 +178,98 @@ footer .icon {
   font-size:20px;/*tamaño de las letra*/
   line-height: 1.6;/*Interlineado*/
 }
+/* Estilos generales del carrito */
+/* Contenedor del carrito */
+#carrito-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    color: black;
+}
+
+/* Lista de productos en el carrito */
+#carrito {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+#carrito li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin: 5px 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    font-size: 16px; /* Tamaño del texto mejorado */
+    color: black; /* Color de texto cambiado a negro */
+}
+
+/* Imagen del producto en el carrito */
+#carrito img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Botón eliminar */
+#carrito button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#carrito button:hover {
+    background-color: #c82333;
+}
+
+/* Estilos del total */
+#total-container {
+    font-size: 20px;
+    font-weight: bold;
+    color: #28a745;
+    margin-top: 10px;
+}
+
+/* Botón para vaciar el carrito */
+#vaciarCarrito {
+    background-color: #ffc107;
+    border: none;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#vaciarCarrito:hover {
+    background-color: #e0a800;
+}
+
+/* Animación al agregar productos */
+.agregado {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
