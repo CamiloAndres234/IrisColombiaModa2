@@ -26,32 +26,47 @@
       </nav>
     </div>
     <!--Seccion de contenido de la pagina de la pagina-->
-    <section class="productos">
-        <h2 class="titulo-productos">Crop Tops</h2>
-        <div class="Filas">
-            <div class="producto">
-                <p>Crop top Eva</p>
-                <img src="IMAGENES/Croptop/CroptopEva.JPG" alt="CroptopEva">
-            </div>
-            <div class="producto">
-                <p>Crop top Isa</p>
-                <img src="IMAGENES/Croptop/CroptopIsa.JPG" alt="CroptopIsa">
-            </div>
-            <div class="producto">
-                <p>Crop top Julia</p>
-                <img src="IMAGENES/Croptop/CroptopJulia.JPG" alt="CroptopJulia">
-            </div>
-        <div class="Filas">
-            <div class="producto">
-                <p>Crop top Lia</p>
-                <img src="IMAGENES/Croptop/CroptopLia.JPG" alt="CroptopLia">
-            </div>
-            <div class="producto">
-                <p>Crop top Luna</p>
-                <img src="IMAGENES/Croptop/CroptopLuna.JPG" alt="CroptopLuna">
-            </div>
+    <!-- Sección de productos -->
+<section class="productos">
+    <h2 class="titulo-productos">Crop Tops</h2>
+    <div class="Filas">
+        <div class="producto" id="croptop-eva" data-nombre="Crop top Eva" data-precio="39990">
+            <p>Crop top Eva - $39,990</p>
+            <img src="IMAGENES/Croptop/CroptopEva.JPG" alt="CroptopEva">
+            <button class="agregar">Agregar al Carrito</button>
         </div>
-    </section>
+        <div class="producto" id="croptop-isa" data-nombre="Crop top Isa" data-precio="39990">
+            <p>Crop top Isa - $39,990</p>
+            <img src="IMAGENES/Croptop/CroptopIsa.JPG" alt="CroptopIsa">
+            <button class="agregar">Agregar al Carrito</button>
+        </div>
+        <div class="producto" id="croptop-julia" data-nombre="Crop top Julia" data-precio="39990">
+            <p>Crop top Julia - $39,990</p>
+            <img src="IMAGENES/Croptop/CroptopJulia.JPG" alt="CroptopJulia">
+            <button class="agregar">Agregar al Carrito</button>
+        </div>
+    </div>
+    <div class="Filas">
+        <div class="producto" id="croptop-lia" data-nombre="Crop top Lia" data-precio="39990">
+            <p>Crop top Lia - $39,990</p>
+            <img src="IMAGENES/Croptop/CroptopLia.JPG" alt="CroptopLia">
+            <button class="agregar">Agregar al Carrito</button>
+        </div>
+        <div class="producto" id="croptop-luna" data-nombre="Crop top Luna" data-precio="39990">
+            <p>Crop top Luna - $39,990</p>
+            <img src="IMAGENES/Croptop/CroptopLuna.JPG" alt="CroptopLuna">
+            <button class="agregar">Agregar al Carrito</button>
+        </div>
+    </div>
+</section>
+
+<!-- Sección del carrito -->
+<div id="carrito-container">
+    <h2>Carrito de Compras</h2>
+    <ul id="carrito"></ul>
+    <p id="total-container">Total: $<span id="total">0</span></p>
+    <button id="vaciarCarrito">Vaciar Carrito</button>
+</div>
 
   <!--Sección de pie de pagina-->
   <footer>
