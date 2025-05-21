@@ -1,0 +1,248 @@
+/*Diseño de toda la pagina*/
+/*cuerpo de pagina*/
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff1fa;
+}
+
+/*Diseño del menú de navegación*/
+header {
+  background-color:#6e428f;
+  color: white;
+  padding: 10px 0;
+}
+
+/*Interior menú de navegación*/
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  font-weight: bold;
+}
+
+.top-bar nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/*Ajuste de logo en la barra de navegación*/
+.logo{
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.logo-img{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.nombre-marca{
+  top:15px;
+  left: 109x;
+  position: absolute;
+}
+
+/*Botón en menú de busqueda*/
+
+.catalogo{
+  background-color: #ff94c2;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold; /*Letra en negrilla*/
+}
+/*Botón en menú de busqueda*/
+
+.catalogo{
+    background-color: #ff94c2;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold; /*Letra en negrilla*/
+}
+
+/*Estilo del interios de contenido de la pagina "Contacto"*/
+/*Apartado que se ajusta al contenido de la pagina*/
+.contacto {
+  background-color: #fcecf5;
+  padding: 50px 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.titulo-principal {
+  font-size: 24px;
+  color: #6a1b9a;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.descripcion {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 15px;
+}
+
+.formulario {
+  background-color: #fff0fa;
+  border: 1px solid #b08fc5;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+
+.formulario .subtitulo {
+  font-style: italic;
+  color: #6a1b9a;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 10px;
+  border: 1px solid #6a1b9a;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  resize: none;
+}
+
+.formulario button {
+  align-self: flex-end;
+  background-color: #f48fb1;
+  border: none;
+  padding: 8px 16px;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario button:hover {
+  background-color: #d16b92;
+}
+
+.subtitulo {
+  font-style: italic;
+  color: #6a1b9a;
+  font-size: 20px;
+  margin: 30px 0 10px;
+}
+
+.datos-contacto {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.datos-contacto li {
+  margin-bottom: 5px;
+}
+
+.datos-contacto a {
+  color: #6a1b9a;
+  text-decoration: none;
+}
+
+.separador {
+  border: 1px solid #6a1b9a;
+  width: 90%;
+  margin: 30px auto;
+}
+
+.mapa img {
+  border: 2px solid #c9b5d4;
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+
+/*Diseño de pie de pagina*/
+/*Fondo del pie de pagina*/
+footer {
+  background-color: #6e428f;
+  color: white;
+  text-align: center;
+  padding: 30px 20px
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: left;
+  background-color: #a55eb2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  border-radius: 30px;
+}
+
+footer input {
+  padding: 5px;
+  margin-top: 5px;
+}
+
+footer button {
+  padding: 5px 10px;
+  margin-top: 5px;
+  background-color: #ff94c2;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+footer h4 {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/*Estilo de la sección de menú footer*/
+footer .MenuF a{
+  font-size: 14px;
+  margin-left: 30px;
+  line-height: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  text-decoration: none;
+  color: white;
+}
+
+copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*Estilo de los iconos de las redes*/
+footer .icon {
+  color: #ff94c2;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 50px;
+  font-size:20px;/*tamaño de las letra*/
+  line-height: 1.6;/*Interlineado*/
+}

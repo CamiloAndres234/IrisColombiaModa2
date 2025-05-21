@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iris Colombia Moda</title>
+  <link rel="stylesheet" href="CSS/Catalogo.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script defer src="JS/script.js" ></script>
+</head>
+<body>
+
+  <!--Barra principal de navegación de la pagina-->
+  <header>
+    <div class="top-bar">
+      <div class="Logo">
+        <img src="IMAGENES/IrisModa.png" alt="Logo" class="logo-img">
+      <span class="nombre-marca">Iris colombia moda</span>
+      </div>
+      <nav>
+        <button class="catalogo"><a href="catalogo.html">Catalogo</a></button>
+        <a href="index.html">Inicio</a>
+        <a href="Sn.html">Sobre Nosotros</a>
+        <a href="servicio.html">Servicios</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+    <!--Seccion de contenido de la pagina de la pagina-->
+    <!--Catalogo principal de la pagina-->
+    <section class="Catalogos">
+  <h2 class="titulo-productos">Catálogo</h2>
+  <hr class="divisor-morado">
+
+  <!-- Barra de navegación rápida -->
+  <nav class="barra-rapida">
+    <a href="#Contenido">Contenido</a>
+    <a href="#Info">Información general</a>
+    <a href="#Crop">Crop y blusas</a>
+    <a href="#Bodys">Bodys</a>
+  </nav>
+
+  <!-- Sección ejemplo -->
+  <div id="vestidos" class="seccion-catalogo">
+    <h3 class="subtitulo-catalogo">Contenido</h3>
+    <div class="galeria-catalogo">
+      <img src="IMAGENES/Catalogo/Portada.jpg" alt="Contenido 1">
+      <img src="IMAGENES/Catalogo/Catalogo2.jpg" alt="Contenido 2">
+      <img src="IMAGENES/Catalogo/Catalogo3.jpg" alt="Contenido 3">
+    </div>
+  </div>
+
+  <hr class="divisor-morado">
+
+  <!-- Sección número 2 Información general-->
+  <div id="Info" class="seccion-catalogo">
+    <h3 class="subtitulo-catalogo">Información general</h3>
+    <div class="galeria-catalogo">
+      <img src="IMAGENES/Catalogo/Catalogo4.jpg" alt="Contenido 4">
+      <img src="IMAGENES/Catalogo/Catalogo15.jpg" alt="Contenido 15 ">
+      <img src="IMAGENES/Catalogo/Catalogo18.jpg" alt="Contenido 18">
+    </div>
+  </div>
+
+  <hr class="divisor-morado">
+
+  <!-- Sección número 3 Crop-->
+  <div id="Crop" class="seccion-catalogo">
+    <h3 class="subtitulo-catalogo">Crop y blusas</h3>
+    <div class="galeria-catalogo">
+      <img src="IMAGENES/Catalogo/Catalogo5.jpg" alt="Contenido 5">
+      <img src="IMAGENES/Catalogo/Catalogo6.jpg" alt="Contenido 6">
+      <img src="IMAGENES/Catalogo/Catalogo7.jpg" alt="Contenido 7">
+    </div>
+  </div>
+
+  <hr class="divisor-morado">
+
+  <!-- Sección número Bodys-->
+  <div id="Bodys" class="seccion-catalogo">
+    <h3 class="subtitulo-catalogo">Bodys</h3>
+    <div class="galeria-catalogo">
+      <img src="IMAGENES/Catalogo/Catalogo8.jpg" alt="Contenido 8">
+      <img src="IMAGENES/Catalogo/Catalogo9.jpg" alt="Contenido 9">
+      <img src="IMAGENES/Catalogo/Catalogo10.jpg" alt="Contenido 10">
+      <img src="IMAGENES/Catalogo/Catalogo11.jpg" alt="Contenido 11">
+      <img src="IMAGENES/Catalogo/Catalogo12.jpg" alt="Contenido 12">
+      <img src="IMAGENES/Catalogo/Catalogo13.jpg" alt="Contenido 13">
+      <img src="IMAGENES/Catalogo/Catalogo14.jpg" alt="Contenido 14">
+      <img src="IMAGENES/Catalogo/Catalogo16.jpg" alt="Contenido 16">
+    </div>
+  </div>
+  
+</section>
+
+
+    
+
+  <!--Sección de pie de pagina-->
+  <footer>
+    <div class="footer-content">
+      <div>
+        <!--Menú principal-->
+        <h4>MENÚ</h4>
+        <p class="MenuF">
+        <a href="index.html">Inicio</a>
+        <a href="Sn.html">Sobre Nosotros</a>
+        <a href="servicio.html">Servicios</a>
+        <a href="contacto.html">Contacto</a>
+        </p>
+      </div>
+      <div>
+        <!--Menú de ayuda y soporte-->
+        <h4>AYUDA</h4>
+        <p class="MenuF">
+          <a href="contacto.html">¿No encontraste lo que buscabas?</a>
+          <a href="Reembolso.html">Garantía de satisfacción</a>
+          <a href="TyC.html">Términos y condiciones</a>
+          <a href="Sn.html">Sobre Nosotros</a>
+          <a href="Work.html">Únete a nuestro equipo</a>
+        </p>
+      </div>
+      <!--Menú de redes sociales-->
+      <div class="Redes">
+        <h4>Síguenos en redes sociales</h4>
+        <p>Mantente al tanto de nuestras novedades</p>
+        <a href="" target="_blank" class="icon"><i class="fab fa-whatsapp"></i> whatsapp</a>
+        <br>
+        <a href="" target="_blank" class="icon"><i class="fab fa-instagram"></i> instagram</a>
+      </div>
+      <!--Sección de correo electronico-->
+      <div>
+        <h4>Suscríbete a nuestro boletín</h4>
+        <input type="email" placeholder="Ingresa tu correo"/>
+        <button type="submit" id="enviarBtn">Enviar</button>
+      </div>
+    </div>
+    <p class="copyright">© 2025 Tu Marca - Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

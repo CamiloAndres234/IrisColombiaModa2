@@ -1,0 +1,200 @@
+/*Diseño de toda la pagina*/
+body {
+  margin: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #fff1fa;
+}
+
+/*Diseño del menú de navegación*/
+header {
+  background-color:#6e428f;
+  color: white;
+  padding: 10px 0;
+}
+
+/*Interior menú de navegación*/
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  font-weight: bold;
+}
+
+.top-bar nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/*Ajuste de logo en la barra de navegación*/
+.logo{
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.logo-img{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.nombre-marca{
+  top:15px;
+  left: 109x;
+  position: absolute;
+}
+
+/*Botón en menú de busqueda*/
+
+.catalogo{
+  background-color: #ff94c2;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold; /*Letra en negrilla*/
+}
+
+/*Diseño del contenido de la pagina "productos"*/
+/*Apartado que se ajusta al contenido de la pagina*/
+/* Fondo general del contenedor del catálogo */
+/* Título principal */
+.titulo-productos {
+  text-align: center;
+  color: #6b2c91;
+  font-size: 36px;
+  margin-top: 40px;
+}
+
+/* Subtítulos de cada sección del catálogo */
+.subtitulo-catalogo {
+  text-align: center;
+  color: #6b2c91;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Línea morada divisora */
+.divisor-morado {
+  border: none;
+  border-top: 3px solid #6b2c91;
+  width: 80%;
+  margin: 20px auto;
+}
+
+/* Galería de imágenes (3 por fila en escritorio) */
+.galeria-catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 40px;
+}
+
+/* Estilo individual de imagen */
+.galeria-catalogo img {
+  width: 100%;
+  border: 4px solid #6b2c91;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.galeria-catalogo img:hover {
+  transform: scale(1.05);
+}
+
+/* Barra de navegación rápida */
+.barra-rapida {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.barra-rapida a {
+  background-color: #6b2c91;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.barra-rapida a:hover {
+  background-color: #8d3dc0;
+}
+
+
+
+/*Diseño de pie de pagina*/
+/*Fondo del pie de pagina*/
+footer {
+  background-color: #6e428f;
+  color: white;
+  text-align: center;
+  padding: 30px 20px
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: left;
+  background-color: #a55eb2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  border-radius: 30px;
+}
+
+footer input {
+  padding: 5px;
+  margin-top: 5px;
+}
+
+footer button {
+  padding: 5px 10px;
+  margin-top: 5px;
+  background-color: #ff94c2;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+footer h4 {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/*Estilo de la sección de menú footer*/
+footer .MenuF a{
+  font-size: 14px;
+  margin-left: 30px;
+  line-height: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  text-decoration: none;
+  color: white;
+}
+
+copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*Estilo de los iconos de las redes*/
+footer .icon {
+  color: #ff94c2;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 50px;
+  font-size:20px;/*tamaño de las letra*/
+  line-height: 1.6;/*Interlineado*/
+}

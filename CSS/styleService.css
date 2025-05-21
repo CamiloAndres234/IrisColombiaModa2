@@ -1,0 +1,230 @@
+/*Diseño de toda la pagina*/
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff1fa;
+}
+
+/*Diseño del menú de navegación*/
+header {
+  background-color:#6e428f;
+  color: white;
+  padding: 10px 0;
+}
+
+/*Interior menú de navegación*/
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  font-weight: bold;
+}
+
+.top-bar nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/*Ajuste de logo en la barra de navegación*/
+.logo{
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.logo-img{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.nombre-marca{
+  top:15px;
+  left: 109x;
+  position: absolute;
+}
+
+/*Botón en menú de busqueda*/
+
+.catalogo{
+  background-color: #ff94c2;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold; /*Letra en negrilla*/
+}
+
+/*Estilo del interios de contenido de la pagina "Servicio"*/
+/*Apartado que se ajusta al contenido de la pagina*/
+.servicios {
+  background-color: #fcecf5;
+  padding: 50px 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.titulo-principal {
+  font-size: 24px;
+  color: #6a1b9a;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.galeria-servicios {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+/*Editor del contenedor de la imagen*/
+.imagen-servicio {
+  width: 100px;
+  height: 130px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 5px #6a1b9a;
+}
+
+/*Editar imageninterios de los primeros iconos*/
+.imagen-servicio img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.separador {
+  border: 1px solid #6a1b9a;
+  margin: 30px auto;
+  width: 90%;
+}
+
+.bloque-servicio {
+  margin-bottom: 30px;
+}
+
+.titulo-seccion {
+  font-size: 20px;
+  font-style: italic;
+  color: #6a1b9a;
+  margin-bottom: 15px;
+}
+
+.contenido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: auto;
+}
+
+.contenido p {
+  max-width: 350px;
+  font-size: 15px;
+  text-align: justify;
+}
+
+/*Editar el contenedor de la imagen redonda*/
+.imagen-redonda {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 5px #6a1b9a;
+}
+
+/*Editar la imagen dentro del contenedor*/
+.imagen-redonda img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Efecto hover */
+.imagen-servicio:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #9b5fc3;
+}
+
+/* Efecto hover */
+.imagen-redonda:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #9b5fc3;
+}
+
+
+/*Diseño de pie de pagina*/
+/*Fondo del pie de pagina*/
+footer {
+  background-color: #6e428f;
+  color: white;
+  text-align: center;
+  padding: 30px 20px
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: left;
+  background-color: #a55eb2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  border-radius: 30px;
+}
+
+footer input {
+  padding: 5px;
+  margin-top: 5px;
+}
+
+footer button {
+  padding: 5px 10px;
+  margin-top: 5px;
+  background-color: #ff94c2;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+footer h4 {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/*Estilo de la sección de menú footer*/
+footer .MenuF a{
+  font-size: 14px;
+  margin-left: 30px;
+  line-height: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  text-decoration: none;
+  color: white;
+}
+
+
+copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*Estilo de los iconos de las redes*/
+footer .icon {
+  color: #ff94c2;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 50px;
+  font-size:20px;/*tamaño de las letra*/
+  line-height: 1.6;/*Interlineado*/
+}
