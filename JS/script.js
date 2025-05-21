@@ -27,10 +27,19 @@ function actualizarCarrito() {
     let listaCarrito = document.getElementById("carrito");
     listaCarrito.innerHTML = ""; // Limpiar el contenido antes de actualizarlo
 
+    // Recorrer cada producto en el carrito
     carrito.forEach((item, index) => {
         let li = document.createElement("li");
-        li.textContent = `${item.nombre} - $${item.precio}`;
-        
+
+        // Agregar la imagen del producto
+        let imagen = document.createElement("img");
+        imagen.src = `IMAGENES/${item.nombre.replace(" ", "")}.jpg`; // Ruta generada a partir del nombre del producto
+        imagen.alt = item.nombre;
+
+        // Agregar el nombre y precio del producto
+        let texto = document.createElement("span");
+        texto.textContent = `${item.nombre} - $${item.precio}`;
+
         // Botón para eliminar producto del carrito
         let botonEliminar = document.createElement("button");
         botonEliminar.textContent = "Eliminar";
@@ -38,10 +47,14 @@ function actualizarCarrito() {
             eliminarProducto(index);
         });
 
+        // Agregar los elementos al carrito
+        li.appendChild(imagen);
+        li.appendChild(texto);
         li.appendChild(botonEliminar);
         listaCarrito.appendChild(li);
     });
 
+    // Actualizar el total
     document.getElementById("total").textContent = total;
     localStorage.setItem("carrito", JSON.stringify(carrito)); // Guardar carrito en localStorage
 }
