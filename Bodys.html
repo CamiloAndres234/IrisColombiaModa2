@@ -26,28 +26,42 @@
       </nav>
     </div>
     <!--Seccion de contenido de la pagina de la pagina-->
-    <section class="productos">
-        <h2 class="titulo-productos">Bodys</h2>
-        <div class="Filas">
-            <div class="producto">
-                <p>Body Iris</p>
-                <img src="IMAGENES/Body/BodyIris.JPG" alt="BodyIris">
-            </div>
-            <div class="producto">
-                <p>Body Lucy</p>
-                <img src="IMAGENES/Body/BodyLucy.JPG" alt="BodyLucy">
-            </div>
-            <div class="producto">
-                <p>Body Cloe</p>
-                <img src="IMAGENES/Body/BodyCloe.JPG" alt="BodyCloe">
-            </div>
-        <div class="Filas">
-            <div class="producto">
-                <p>Body Pao</p>
-                <img src="IMAGENES/Body/BodyPao.JPG" alt="BodyPao">
-            </div>
+    <!-- Sección de productos -->
+<section class="productos">
+    <h2 class="titulo-productos">Bodys</h2>
+    <div class="Filas">
+        <div class="producto" id="body-iris" data-nombre="Body Iris" data-precio="79990">
+            <p>Body Iris - $79,990</p>
+            <img src="IMAGENES/Body/BodyIris.JPG" alt="BodyIris">
+            <button class="agregar">Agregar al Carrito</button>
         </div>
-    </section>
+        <div class="producto" id="body-lucy" data-nombre="Body Lucy" data-precio="79990">
+            <p>Body Lucy - $79,990</p>
+            <img src="IMAGENES/Body/BodyLucy.JPG" alt="BodyLucy">
+            <button class="agregar">Agregar al Carrito</button>
+        </div>
+        <div class="producto" id="body-cloe" data-nombre="Body Cloe" data-precio="79990">
+            <p>Body Cloe - $79,990</p>
+            <img src="IMAGENES/Body/BodyCloe.JPG" alt="BodyCloe">
+            <button class="agregar">Agregar al Carrito</button>
+        </div>
+    </div>
+    <div class="Filas">
+        <div class="producto" id="body-pao" data-nombre="Body Pao" data-precio="79990">
+            <p>Body Pao - $79,990</p>
+            <img src="IMAGENES/Body/BodyPao.JPG" alt="BodyPao">
+            <button class="agregar">Agregar al Carrito</button>
+        </div>
+    </div>
+</section>
+
+<!-- Sección del carrito -->
+<div id="carrito-container">
+    <h2>Carrito de Compras</h2>
+    <ul id="carrito"></ul>
+    <p id="total-container">Total: $<span id="total">0</span></p>
+    <button id="vaciarCarrito">Vaciar Carrito</button>
+</div>
 
   <!--Sección de pie de pagina-->
   <footer>
